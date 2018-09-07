@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #4f8d89;
+    display: flex;
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 150px;
+    height: 50px;
+    color: #4f8d89;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: white;
+    border: 3px solid #db35af;
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    color: #db35af;
+    display: inline-block;
+    font-family: 'Monda', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 0 30px white, 0 0 10px #ccdb83;
+}
+
+li:nth-child(3) {
+    transform: rotate(15deg) translateY(4px);
+    animation: neon 0.2s infinite;
+}
+
+.off {
+    opacity: 0;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}

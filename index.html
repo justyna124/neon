@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Monda:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Neon</title>
+</head>
+<body>
+<button>WYŁĄCZ</button>
+<ul>
+    <li>W</li>
+    <li>3</li>
+    <li>S</li>
+    <li>C</li>
+    <li>H</li>
+    <li>O</li>
+    <li>O</li>
+    <li>L</li>
+    <li>S</li>
+    <li>.</li>
+    <li>C</li>
+    <li>O</li>
+    <li>M</li>
+</ul>
+
+
+
+<script>
+    var button=document.querySelector('button');
+    button.addEventListener('click',function () {
+        if(button.textContent==='WYŁĄCZ'){
+            button.textContent='WŁĄCZ';
+        }else{
+            button.textContent='WYŁĄCZ';
+        }
+
+const letters=document.querySelectorAll('li');
+        for(var i=0;i<letters.length;i++){
+            letters[i].classList.toggle('off');
+        }
+    })
+</script>
+</body>
+</html>
